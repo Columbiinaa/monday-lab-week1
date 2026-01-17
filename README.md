@@ -102,6 +102,25 @@ This will:
 
 ---
 
+## Model & Dataset Links
+
+###  Trained Model
+The trained ResNet model is not included in this repository due to GitHub file size limits.
+
+You can download the trained model from:
+https://drive.google.com/file/d/187x3hUpCwH_2RRrqW8F_n0jYXp8ROsZT/view?usp=sharing
+
+
+---
+
+
+### 🔗 Dataset
+The dataset used for training is available at:
+https://drive.google.com/drive/folders/1lsYW3OToTH-f3GdRgk3WxyOVguR-2Y14?usp=sharing
+
+
+---
+
 ## Future Improvements
 - Add inference script
 - Add evaluation metrics (accuracy, confusion matrix)
