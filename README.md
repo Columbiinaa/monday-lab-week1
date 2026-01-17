@@ -1,75 +1,119 @@
-# Synthetic Dog Breed Dataset Generation
-**CSET419 – Introduction to Generative AI | Lab–1**
+# Monday Lab – Week 1  
+### Image Classification using ResNet
+
+This project is part of **Monday Lab – Week 1** and demonstrates an end-to-end **image classification pipeline** using a **ResNet-based deep learning model**.
+
+The repository includes scripts to:
+- Generate a dataset
+- Train a ResNet model on the dataset
 
 ---
 
-## Objective
-To generate a synthetic image dataset of dog breeds using a pre-trained Generative AI model and organize the generated images into labeled folders.
+## Project Structure
+```
+monday-lab-week1/
+│── README.md
+│── generate_dataset.py     # Script to generate / prepare dataset
+│── train_resnet.py         # Script to train ResNet model
+```
 
 ---
 
-## Domain
-Image Data Generation
+## Project Overview
+
+- **Model**: ResNet (Residual Neural Network)
+- **Task**: Image Classification
+- **Framework**: PyTorch
+- **Workflow**:
+  1. Generate or prepare dataset
+  2. Train ResNet on the dataset
+  3. Save trained model locally (not pushed to GitHub)
+
+> Trained model files are not included due to GitHub file size limits.
 
 ---
 
-## Generative Model Used
-Stable Diffusion (Diffusion-based Generative AI Model) using Hugging Face Diffusers.
+## ⚙️ Setup Instructions
+
+### Clone the repository
+```bash
+git clone https://github.com/Columbiinaa/monday-lab-week1.git
+cd monday-lab-week1
+```
 
 ---
 
-## Dataset Description
-This dataset consists of synthetically generated images of different dog breeds.
-Each breed is treated as a class label and stored in a separate folder.
+### Create virtual environment (recommended)
+```bash
+python -m venv venv
+```
 
-> Note: Dog is one species (*Canis lupus familiaris*). Breeds are used as labels.
+**Windows**
+```bash
+venv\Scripts\activate
+```
 
----
-
-## Dog Breeds (Labels)
-- Labrador Retriever
-- German Shepherd
-- Golden Retriever
-- Bulldog
-- Poodle
-- Beagle
-- Rottweiler
-- Siberian Husky
+**Mac/Linux**
+```bash
+source venv/bin/activate
+```
 
 ---
 
-## Tools & Technologies
-- Python 3
-- Google Colab
-- PyTorch
-- Hugging Face Diffusers
-- Stable Diffusion v1.5
+### Install dependencies
+```bash
+pip install torch torchvision numpy matplotlib
+```
+
+(Install additional libraries if required by your environment.)
 
 ---
 
-## Execution Environment
-Executed on Google Colab with GPU acceleration.
+## Dataset Generation
+
+Run the dataset generation script:
+```bash
+python generate_dataset.py
+```
+
+This script:
+- Creates the dataset structure
+- Prepares images for training
 
 ---
 
-## How to Run
-1. Open Google Colab  
-2. Enable GPU  
-3. Install dependencies  
-4. Run the dataset generation script
+## Model Training
+
+Train the ResNet model using:
+```bash
+python train_resnet.py
+```
+
+This will:
+- Load the generated dataset
+- Train a ResNet-based model
+- Save the trained weights locally
 
 ---
 
-## Output
-A labeled synthetic image dataset of dog breeds.
+## Notes
+- This project focuses on **learning and experimentation**
+- Code is kept simple and readable
 
 ---
 
-## Conclusion
-This experiment demonstrates the use of Generative AI models to create synthetic datasets using Stable Diffusion.
+## Future Improvements
+- Add inference script
+- Add evaluation metrics (accuracy, confusion matrix)
+- Upload model to Hugging Face
+- Add sample dataset
 
 ---
 
 ## Author
-Anusha Singh  
-CSET419 – Introduction to Generative AI
+**Anusha Singh**  
+GitHub: https://github.com/Columbiinaa
+
+---
+
+If you find this project helpful, consider giving it a star!
